@@ -1,0 +1,191 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+      
+    <title>Na Trave - Nova Partida</title>
+    <link rel="icon" href="img/icon.png">
+   
+
+    <!-- Bootstrap -->
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="estilo.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+
+
+    <nav class="navbar navbar-fixed-top navbar-inverse navbar-transparente">
+      <div class="container">
+
+        <!-- header -->
+        <div class="navbar-header" >
+
+          <!--botao toggle-->
+          <button type="button" class="navbar-toggle collapsed"
+                  data-toggle="collapse" data-target="#barra-navegacao">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+
+
+
+          <a href="index.html" class="navbar-brand">
+            
+            <span class="img-logo">Na Trave</span>
+          </a>
+          
+        </div>
+
+        <!-- Navbar -->
+
+        <div class="collapse navbar-collapse" id="barra-navegacao">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="index.php">Home</a></li>
+            <li><a href="#partida">Partidas</a></li>
+            <li><a href="construcao.html">Sobre</a></li>
+            <li><a href="construcao.html">Quem Somos</a></li>
+          
+           
+          </ul>
+        </div>
+
+
+      </div> <!-- /container -->
+
+
+</nav> <!-- /nav -->
+
+<!-- =================== Nova Partida ==================== -->
+
+  <div class="container">
+      
+      <div class="page-header">
+        <h1>Cadastrar Nova Partida</h1>
+      </div>
+
+      <div class="row">
+        <div class="col-sm-8">
+          <h3>Cadastrar partida</h3>
+      <form name="formPartida" action="Banco.php" method="post" >
+
+        <div class="form-group">
+          <label>Nome da partida</label>
+          <input type="text" class="form-control" name="nomePartida" id="nome-partida">
+        </div>
+        <div class="form-group">
+          <label>horario Partida</label>
+          <input type="text" class="form-control" name="descpartida" id="descricao">
+        </div>
+
+        <div class="form-group">
+          <label for="exampleInputFile">Imagem de capa</label>
+          <input type="file" class="form-control-file" id="exampleInputFile" aria-describedby="fileHelp">
+          <small id="fileHelp" class="form-text text-muted">selecione uma imagem de 60x60 para por de capa na sua partida</small>
+        </div>
+
+      <br>
+      <h4>Endereço</h4>
+      <br>
+
+        <div class="row">
+            <div class="col-sm-6"> <!-- coluna direita -->
+
+              <div class="form-group">
+                <label>Rua</label>
+                <input type="text" class="form-control" name="rua" id="nome-partida">
+              </div>
+
+              <div class="form-group">
+                <label>Latitude</label>
+                <input type="text" class="form-control" name="Latitude" id="nome-partida">
+              </div>
+
+            
+            </div><!-- /coluna direita -->
+
+            <div class="col-sm-6"> <!-- coluna esquerda -->
+
+            <div class="form-group">
+                <label>Bairro</label>
+                <input type="text" class="form-control" name="Bairro" id="nome-partida">
+              </div>
+
+              <div class="form-group">
+                <label> Longitude</label>
+                <input type="text" class="form-control" name="Longitude" id="nome-partida">
+                <a href="https://www.latlong.net/">Consultar Latitude e longitude</a>  
+              </div>
+             
+            </div><!-- /coluna esquerda -->
+        </div>
+      
+
+          
+
+
+            
+  
+
+            
+
+          
+          
+ 
+            <button type="submit" class="btn btn-default" >Cadastrar</button>
+            
+            
+            </form>
+
+            
+
+        </div>
+
+        <div class="col-sm-4">
+            
+          <h3>Cadastre-se</h3>
+
+        <form name="formPessoa" action="cadastroPessoa.php" method="post" >    
+          <div class="form-group">
+          <label>Nome</label>
+          <input type="text" class="form-control" name="nome" id="nome">
+        </div>
+        <div class="form-group">
+              <label for="email">E-mail</label>
+              <input type="email" class="form-control" name="email" id="email">
+                <button type="submit" class="btn btn-default">Cadastrar Usuario</button>
+            
+            </div>
+        </form>
+            
+          
+        </div>
+
+      
+
+      </div>
+
+    </div> 
+
+
+<!-- =================== scripts ==================== -->
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+  </body>
+</html>
